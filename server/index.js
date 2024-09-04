@@ -89,7 +89,7 @@ server.post("/auth/register", (req, res) => {
 });
 
 // Login
-server.get("/auth/login", (req, res) => {
+server.post("/auth/login", (req, res) => {
   // Get authorization header -> el token
   let codi = req.headers.authorization.split(" ")[1];
 
